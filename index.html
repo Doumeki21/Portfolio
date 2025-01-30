@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/mobile.css" />
+
+    <title>Olenka Yuen</title>
+</head>
+<body>
+
+      <!-- Checkbox Trick for Mobile Toggle -->
+      <input type="checkbox" id="menu-toggle" style="display: none;">
+    
+      <!-- Hamburger Button -->
+      <label for="menu-toggle" class="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+      </label>
+  
+      <!-- Sidebar Navigation -->
+      <div class="sidebar">
+          <a class="fancy-link" href="#">About</a>
+          
+          <!-- Dropdown Portfolio -->
+          <div class="dropdown">
+              <input type="checkbox" id="dropdown-toggle" style="display: none;">
+              <label for="dropdown-toggle" class="dropdown-label" style="display: block; color: white; padding: 12px 20px; cursor: pointer;">
+                  Portfolio ▼
+              </label>
+              <div class="dropdown-content">
+                  <a class="fancy-link" href="#">3D</a>
+                  <a class="fancy-link" href="#">Illustrations</a>
+                  <a class="fancy-link" href="#">Projects</a>
+              </div>
+          </div>
+  
+          <a class="fancy-link" href="#">Contact</a>
+          <a class="fancy-link" href="#">Resume</a>
+      </div>
+  
+      <!-- Main Content -->
+      <!-- <div class="content">
+          <h1>Welcome to My Portfolio</h1>
+          <p>This is where your main content goes.</p>
+      </div> -->
+
+<div class="wrapper">
+      <div class="gallery-container">
+		<!-- <h2>Masonry Gallery</h2> -->
+		<ul class="masonry-gallery no-select">
+
+           <li><img src="assets/3D/AestheticCrisis1_Olenka.png" alt="hands chained"></li> 
+            <li><video src="assets/3D/Magician'sRoom_Olenka.mp4" autoplay="" muted="" loop=""></video></li>
+            <li><img src="assets/3D/AestheticCrisis2_Olenka.png" alt="hands chained"></li>
+            <li><video src="assets/3D/Artblock_Olenka.mp4" autoplay="" muted="" loop=""></video></li>
+		</ul>
+	</div>
+
+      <!-- <figure class="image-gallery no-select">
+        <img src="assets/AestheticCrisis1_Olenka.png" alt="hands chained">
+        <img src="assets/AestheticCrisis1_Olenka.png" alt="hands chained">
+        <video src="assets/LowPolyDiorama_Olenka.mp4" autoplay="" muted="" loop=""></video> 
+
+      </figure> -->
+
+</div>
+
+</body>
+</html>
