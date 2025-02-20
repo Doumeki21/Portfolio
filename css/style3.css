@@ -1,0 +1,120 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Navigation Bar */
+.navbar {
+    width: 250px;
+    height: 100vh;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.navbar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-menu li {
+    margin: 15px 0;
+}
+
+.navbar-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar-menu li a:hover {
+    color: #ff6347; /* Change to your preferred hover color */
+}
+
+/* Hamburger Menu */
+.navbar-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1001;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+#mobile-menu {
+    display: none;
+}
+
+/* Gallery Section */
+.gallery {
+    margin-left: 250px; /* Match the width of the navbar */
+    padding: 20px;
+    flex-grow: 1;
+    overflow-y: auto; /* Enable vertical scrolling */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px;
+    background-color: #f4f4f4;
+}
+
+.gallery-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img, .gallery-item video {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 16 / 9; /* Maintain aspect ratio */
+}
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 1000px) {
+    .navbar {
+        width: 250px;
+        transform: translateX(-100%);
+    }
+
+    #mobile-menu:checked ~ .navbar {
+        transform: translateX(0);
+    }
+
+    .navbar-toggle {
+        display: flex;
+    }
+
+    .gallery {
+        margin-left: 0;
+        grid-template-columns: 1fr; /* 1 column for mobile */
+    }
+}

@@ -3,50 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
-    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/mobile.css" />
+
+    <title>My Portfolio</title>
 </head>
 <body>
-    <!-- Fixed Navbar on the Left -->
-    <nav class="navbar">
-        <input type="checkbox" id="mobile-menu">
-        <label for="mobile-menu" class="navbar-toggle">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </label>
-        <div class="navbar-brand">My Portfolio</div>
-        <ul class="navbar-menu">
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#3d">3D</a></li>
-            <li><a href="#illustrations">Illustrations</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#resume">Resume</a></li>
-        </ul>
-    </nav>
 
-    <!-- Scrollable Gallery on the Right -->
-    <div class="gallery">
-        <div class="gallery-item">
-            <img src="image1.jpg" alt="Image 1">
+        <!-- Checkbox Trick for Mobile Toggle -->
+        <input type="checkbox" id="menu-toggle" style="display: none;">
+    
+        <!-- Hamburger Button -->
+        <label for="menu-toggle" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+    
+        <!-- Sidebar Navigation (Simple List) -->
+        <nav class="sidebar">
+            <ul>
+                <li><a class="fancy-link" href="#">Portfolio</a>
+                    <ul>
+                        <li><a class="fancy-link" href="#">3D</a></li>
+                        <li><a class="fancy-link" href="#">Illustrations</a></li>
+                        <li><a class="fancy-link" href="#">Projects</a></li>
+                    </ul>
+                </li>
+                <li><a class="fancy-link" href="#">About</a></li>
+                <li><a class="fancy-link" href="#">Resume</a></li> 
+            </ul>
+                    <!-- Footer Section -->
+            <footer class="sidebar-footer">
+                <p>©2025 My Portfolio</p>
+                <div class="social-icons">
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="icons/twitter-icon.png" alt="Twitter">
+                    </a>
+                    <a href="https://instagram.com" target="_blank">
+                        <img src="icons/instagram-icon.png" alt="Instagram">
+                    </a>
+                    <a href="https://linkedin.com" target="_blank">
+                        <img src="icons/linkedin-icon.png" alt="LinkedIn">
+                    </a>
+                    
+                </div>
+            </footer>
+        </nav>
+    
+        <div class="wrapper">
+            <div class="gallery-container">
+                <ul class="masonry-gallery no-select">
+                    <li><img src="assets/3D/AestheticCrisis1_Olenka.png"></li>
+                    <li><video src="assets/3D/Magician'sRoom_Olenka.mp4" autoplay muted loop></video></li>
+                    <li><img src="assets/3D/AestheticCrisis2_Olenka.png" alt="hands chained"></li>
+                    <li><video src="assets/3D/Artblock_Olenka.mp4" autoplay muted loop></video></li>
+                </ul>
+            </div>
         </div>
-        <div class="gallery-item">
-            <video controls>
-                <source src="video1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-        <div class="gallery-item">
-            <img src="image2.jpg" alt="Image 2">
-        </div>
-        <div class="gallery-item">
-            <video controls>
-                <source src="video2.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-        <!-- Add more gallery items as needed -->
-    </div>
+    
+      
+
 </body>
 </html>

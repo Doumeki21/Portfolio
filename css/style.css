@@ -1,124 +1,180 @@
 /* General Styles */
-body {
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    display: flex;
-    height: 100vh;
-    overflow: hidden;
-}
-
-/* Fixed Navbar on the Left */
-.navbar {
-    width: 250px;
-    height: 100vh;
-    background-color: #333;
-    color: white;
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
+    padding: 0;
     box-sizing: border-box;
 }
 
-.navbar-brand {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
+body {
+    font-family: Nunito;
+    background: #f4f4f4;
+    transition: 0.3s ease-in-out;
 }
 
-.navbar-menu {
+/* Sidebar Navigation */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 220px;
+    height: 100vh;
+    background: #222;
+    padding-top: 20px;
+    box-sizing: border-box; /* Include padding in the height calculation */
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+
+    display: flex;
+    flex-direction: column; /* Make sidebar a flex container */
+    justify-content: space-between; /* Push footer to the bottom */
+}
+
+/* Sidebar List Styles */
+.sidebar ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.navbar-menu li {
-    margin: 15px 0;
+.sidebar li {
+    padding: 12px 20px;
 }
 
-.navbar-menu li a {
+.sidebar a {
+    display: block;
     color: white;
     text-decoration: none;
+    padding: 12px 20px;
     font-size: 18px;
-    transition: color 0.3s ease;
+    /* transition: color 0.1s ease; */
 }
 
-.navbar-menu li a:hover {
-    color: #ff6347; /* Change to your preferred hover color */
+/* Sidebar Footer */
+.sidebar-footer {
+    padding: 20px 0; /* Add padding inside the footer */
+    text-align: left; /* Align text and icons to the left */
+    border-top: 1px solid #444; /* Optional: Add a border above the footer */
 }
 
-.navbar-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
+.sidebar-footer p {
+    color: white;
+    font-size: 12px;
+    padding-left: 10px;
 }
 
-.bar {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 4px 0;
+/* Social Media Icons */
+.social-icons {
+    /* display: flex; */
+    gap: 5px; /* Space between icons */
 }
 
-#mobile-menu {
-    display: none;
+.social-icons a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+    font-size: 10px;
 }
 
-/* Scrollable Gallery on the Right */
-.gallery {
-    margin-left: 250px; /* Match the width of the navbar */
-    padding: 20px;
-    flex-grow: 1;
-    overflow-y: auto; /* Enable vertical scrolling */
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    gap: 20px;
-    background-color: #f4f4f4;
+.social-icons a:hover {
+    transform: scale(1.2); /* Slightly enlarge icons on hover */
 }
 
-.gallery-item {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.social-icons img {
+    width: 20px; /* Make icons smaller */
+    height: 20px; /* Make icons smaller */
+    filter: brightness(0) invert(1); /* Make icons white */
 }
 
-.gallery-item img, .gallery-item video {
+.fancy-link {
+    text-decoration: none;
+    /* position: relative; */
+  }
+  
+  /* .fancy-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5%;
     width: 100%;
-    height: auto;
-    display: block;
-    aspect-ratio: 16 / 9; /* Maintain aspect ratio */
+    height: 5px;
+    background: rgb(100, 100, 100);
+  
+    transform: scaleX(0.01);
+    transform-origin: right;
+    transition: transform 250ms ease;
+  }
+  
+  .fancy-link:hover::after {
+    color: rgb(100, 100, 100);
+    transform: scaleX(1);
+    transform-origin: left;
+  } */
+
+
+.fancy-link:hover {
+    color: pink; /* Change text color to pink on hover */
 }
 
-/* Responsive Design for Mobile */
-@media (max-width: 768px) {
-    .navbar {
-        width: 100%;
-        height: auto;
-        position: relative;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px;
-    }
+/* Main Content */
+/* .content {
+    margin-left: 240px;
+    padding: 100px;
+    min-height: 100vh;
+    transition: margin-left 0.3s ease-in-out;
+} */
 
-    .navbar-menu {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-    }
+.wrapper {
+	margin: 0 auto;
+	max-width: 100%;
+	padding: 2rem;
+	text-align: center;
+    margin-left: 240px; /* Match sidebar width */
+    transition: margin-left 0.3s ease-in-out;
+	
+	.gallery-container {
+		background: #ffcc00;
+		border-radius: 0.5rem;
+		padding: 1rem;
+		margin: 1rem 0;
+		
+		/* h2 {
+			color: #333;
+		} */
+		
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			
+			li img {
+				display: block;
+				height: auto;
+				max-width: 100%;
+			}
 
-    #mobile-menu:checked ~ .navbar-menu {
-        display: flex;
-    }
+            li video {
+                    height: 100%; /* Make sure the video fills the container */
+                    width: 100%; /* Ensure it respects the parent's width */
+                    object-fit: cover; /* Ensure the video covers the area properly without distorting *
+                    height: 100%;*/
+            }
+		}
+	}
+}
 
-    .navbar-toggle {
-        display: flex;
-    }
+/* THE MEAT AND POTATOES */
+.gallery-container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+	
+	&.masonry-gallery {
+		columns: auto 2;
+		column-gap: 1rem;
 
-    .gallery {
-        margin-left: 0;
-        grid-template-columns: 1fr; /* 1 column for mobile */
-    }
+		li {
+			break-inside: avoid;
+			margin: 0 0 1rem;
+		}
+	}
+	
 }
