@@ -38,14 +38,15 @@ body {
 
 .sidebar li {
     padding: 12px 20px;
+    color: white;
+    font-size: 18px;
 }
 
 .sidebar a {
     display: block;
-    color: white;
     text-decoration: none;
-    padding: 12px 20px;
-    font-size: 18px;
+    color: white;
+    /* padding: 12px 20px; */
     /* transition: color 0.1s ease; */
 }
 
@@ -125,13 +126,13 @@ body {
 .wrapper {
 	margin: 0 auto;
 	max-width: 100%;
-	padding: 2rem;
+	/* padding: 2rem; */
 	text-align: center;
     margin-left: 240px; /* Match sidebar width */
     transition: margin-left 0.3s ease-in-out;
 	
 	.gallery-container {
-		background: #ffcc00;
+		border: 2px solid #FF5291;
 		border-radius: 0.5rem;
 		padding: 1rem;
 		margin: 1rem 0;
@@ -161,20 +162,86 @@ body {
 	}
 }
 
+.cover {
+    display: block;
+    margin: auto;
+}
+
 /* THE MEAT AND POTATOES */
 .gallery-container ul {
     list-style: none;
     margin: 0;
     padding: 0;
+}
 	
-	&.masonry-gallery {
+	.masonry-gallery {
 		columns: auto 2;
-		column-gap: 1rem;
+		column-gap: 0.5rem;
 
 		li {
 			break-inside: avoid;
-			margin: 0 0 1rem;
+			margin: 0 0 0.5rem;
 		}
 	}
-	
+
+.gallery-container{
+        /* 📌 Two-Column Layout - Now Scales Properly */
+    .two-column-layout {
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    align-items: flex-start;
+    gap: 2rem; /* Adds space between columns */
+    overflow: hidden; /* Prevents any content overflow */
+    }
 }
+
+h1 {
+    text-decoration: underline;
+    color: #FF5291;
+}
+
+/* Left Column (Text) - Adjusted Width */
+.text-column {
+    width: 60%; /* Slightly larger than the image column */
+    padding: 5rem;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+/* Right Column (Images) - Scales Better */
+.image-column {
+    width: 30%; /* Smaller to prevent overflow */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Adds spacing between images */
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* Image Scaling */
+.image-column img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+/* Fixed Grid Gallery to be Properly 2 Columns */
+.grid-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Ensures two columns */
+    gap: 0.5rem; /* Space between items */
+    padding: 1rem;
+}
+
+.grid-gallery li {
+    margin: 0; /* Ensures no weird spacing */
+}
+
+.grid-gallery img {
+    width: 100%; /* Ensures images fit inside their grid */
+    height: auto;
+    display: block;
+}
+

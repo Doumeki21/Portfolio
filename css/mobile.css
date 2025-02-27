@@ -36,7 +36,7 @@
         text-align: left;
     }
 
-    .sidebar a {
+    .sidebar li {
         font-size: 24px;
         padding: 15px;
     }
@@ -96,9 +96,22 @@
         margin-left: 0;
     }
 
-    /* Switch to 1-column gallery in mobile view */
+    /* Switch to 1-column masonry gallery in mobile view */
     .gallery-container ul.masonry-gallery {
         columns: auto 1;
     }
 
+    .two-column-layout {
+        flex-direction: column;
+    }
+
+    .text-column,
+    .image-column {
+        width: 100%;
+        text-align: left;
+    }
+
+    .grid-gallery {
+        grid-template-columns: repeat(1, 1fr); /* Switches to 1 column on small screens */
+    }
 }
