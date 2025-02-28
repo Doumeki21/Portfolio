@@ -101,14 +101,21 @@
         columns: auto 1;
     }
 
+    .masonry-3gallery {
+        columns: auto 2;
+    }
+
     .two-column-layout {
         flex-direction: column;
     }
 
-    .text-column,
+    .text-column {
+        text-align: left;
+        padding: 0.5rem;
+    }
+
     .image-column {
         width: 100%;
-        text-align: left;
     }
 
     .grid-gallery {

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/mobile.css" />
+
+    <title>My Portfolio</title>
+</head>
+<body>
+
+        <!-- Checkbox Trick for Mobile Toggle -->
+        <input type="checkbox" id="menu-toggle" style="display: none;">
+    
+        <!-- Hamburger Button -->
+        <label for="menu-toggle" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+    
+        <!-- Sidebar Navigation (Simple List) -->
+        <nav class="sidebar">
+            <ul>
+                <li>Portfolio
+                    <ul>
+                        <li><a class="fancy-link" href="index.html">3D</a></li>
+                        <li><a class="fancy-link current-link" href="#">Illustrations</a></li>
+                        <li><a class="fancy-link" href="projects.html">Projects</a></li>
+                    </ul>
+                </li>
+                <li><a class="fancy-link" href="#">About</a></li>
+                <li><a class="fancy-link" href="#">Resume</a></li> 
+            </ul>
+                    <!-- Footer Section -->
+            <footer class="sidebar-footer">
+                <p>©2025 My Portfolio</p>
+                <div class="social-icons">
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="icons/twitter-icon.png" alt="Twitter">
+                    </a>
+                    <a href="https://instagram.com" target="_blank">
+                        <img src="icons/instagram-icon.png" alt="Instagram">
+                    </a>
+                    <a href="https://linkedin.com" target="_blank">
+                        <img src="icons/linkedin-icon.png" alt="LinkedIn">
+                    </a>
+                    
+                </div>
+            </footer>
+        </nav>
+    
+        <div class="wrapper">
+            <div class="gallery-container">
+                <ul class="masonry-3gallery no-select">
+                    <li><img src="assets/Illustrations/clarette_OC.jpg"></li>
+                    <li><img src="assets/Illustrations/Takehiko_Redesign.jpg"></li>
+                    <li><img src="assets/Illustrations/Takehiko_Concepts.jpg"></li>
+                    <li><img src="assets/Illustrations/megumi sukunyan edit.jpg"></li>
+                    <li><img src="assets/Illustrations/mp100_Teru_Fanart.jpg"></li>
+                    <li><img src="assets/Illustrations/mp100Fanart.jpg"></li>
+                    
+                    
+                    <li><img src="assets/Illustrations/RieManchotta_OC.jpg"></li>
+                    
+                    <li><img src="assets/Illustrations/Olenka_abstract_portrait.jpg"></li>
+                    <!-- <li><img src="assets/Illustrations/jjkFanart.jpg"></li> -->
+                    
+                </ul>
+            </div>
+        </div>
+    
+      
+
+</body>
+</html>
