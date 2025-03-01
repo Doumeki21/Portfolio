@@ -50,9 +50,13 @@ body {
     /* transition: color 0.1s ease; */
 }
 
+footer {
+    margin-top: auto;
+  }
+
 /* Sidebar Footer */
 .sidebar-footer {
-    padding: 20px 0; /* Add padding inside the footer */
+    padding: 12px 20px;
     text-align: left; /* Align text and icons to the left */
     border-top: 1px solid #444; /* Optional: Add a border above the footer */
 }
@@ -60,7 +64,7 @@ body {
 .sidebar-footer p {
     color: white;
     font-size: 12px;
-    padding-left: 10px;
+    /* padding-left: 10px; */
 }
 
 /* Social Media Icons */
@@ -220,7 +224,7 @@ h1 {
 
 /* Left Column (Text) - Adjusted Width */
 .text-column {
-    width: 60%; /* Slightly larger than the image column */
+    width: 55%; /* Slightly larger than the image column */
     padding: 5rem 10rem;
     text-align: left;
     box-sizing: border-box;
@@ -228,10 +232,10 @@ h1 {
 
 /* Right Column (Images) - Scales Better */
 .image-column {
-    width: 30%; /* Smaller to prevent overflow */
+    width: 35%; /* Smaller to prevent overflow */
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem; /* Adds spacing between images */
+    /* gap: 1rem;  */
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
@@ -241,7 +245,7 @@ h1 {
 .image-column img {
     width: 100%;
     height: auto;
-    border-radius: 8px;
+    /* border-radius: 8px; */
 }
 /* Fixed Grid Gallery to be Properly 2 Columns */
 .grid-gallery {
