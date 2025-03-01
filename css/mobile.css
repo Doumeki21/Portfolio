@@ -39,11 +39,11 @@
 
     .sidebar li {
         font-size: 24px;
-        padding: 15px 50px;
+        padding: 15px 80px;
     }
 
     .sidebar-footer {
-        padding: 50px; /*align more centered with the navbar list*/
+        padding: 80px; /*align more centered with the navbar list*/
     }
 
     /* .dropdown-content {
@@ -111,7 +111,7 @@
     }
 
     .two-column-layout {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .text-column {
@@ -121,7 +121,7 @@
 
     .image-column {
         width: 50%;
-        align-self: self-end;
+        align-self: self-start;
     }
 
     .grid-gallery {
