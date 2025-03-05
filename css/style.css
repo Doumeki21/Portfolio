@@ -9,6 +9,8 @@ body {
     font-family: Nunito;
     background: #f4f4f4;
     transition: 0.3s ease-in-out;
+    background: #222;
+    color: #f4f4f4;
 }
 
 /* Sidebar Navigation */
@@ -142,7 +144,7 @@ li .current-link {
     transition: margin-left 0.3s ease-in-out;
 	
 	.gallery-container {
-		border: 2px solid #FF5291;
+		/* border: 2px solid #FF5291; */
 		border-radius: 0.5rem;
 		padding: 1rem;
 		margin: 1rem 0;
@@ -265,3 +267,6 @@ h1 {
     display: block;
 }
 
+.name {
+    text-decoration: none;
+}
