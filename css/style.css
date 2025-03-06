@@ -5,6 +5,14 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'bernier';
+    src: url('../assets/fonts/BERNIER-REGULAR.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 body {
     font-family: Nunito;
     background: #f4f4f4;
@@ -39,9 +47,19 @@ body {
 }
 
 .sidebar li {
-    padding: 12px 20px;
-    color: white;
     font-size: 18px;
+
+    &.category {
+        padding: 3px 20px;
+        color: white;
+        font-family: 'bernier', sans-serif;
+        /* transform: rotate(45deg); */
+    }
+
+    &.type {
+        padding: 3px 20px;
+        font-family: Nunito;
+    }
 }
 
 .sidebar a {
@@ -220,7 +238,12 @@ li .current-link {
 }
 
 h1 {
-    text-decoration: underline;
+    font-family: 'bernier';
+    /* text-decoration: underline; */
+    /* color: #FF5291; */
+}
+
+.ext-link {
     color: #FF5291;
 }
 
@@ -269,4 +292,6 @@ h1 {
 
 .name {
     text-decoration: none;
+    font-family: 'bernier';
+    color: #f4f4f4;
 }

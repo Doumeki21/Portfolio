@@ -37,13 +37,26 @@
         padding-top: 5rem;
     }
 
-    .sidebar li {
+    /* .sidebar li {
         font-size: 24px;
         padding: 15px 80px;
+    } */
+
+    .sidebar li {
+        font-size: 24px;
+    
+        &.category {
+            padding: 3px 80px;
+            color: white;
+        }
+    
+        &.type {
+            padding: 3px 20px;
+        }
     }
 
     .sidebar-footer {
-        padding: 80px; /*align more centered with the navbar list*/
+        padding: 80px;
     }
 
     /* .dropdown-content {
@@ -121,7 +134,7 @@
 
     .image-column {
         width: 50%;
-        align-self: self-start;
+        /* align-self: self-start; */
     }
 
     .grid-gallery {
