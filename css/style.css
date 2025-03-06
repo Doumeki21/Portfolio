@@ -59,6 +59,7 @@ body {
     &.type {
         padding: 3px 20px;
         font-family: Nunito;
+        font-weight: bold;
     }
 }
 
@@ -223,6 +224,11 @@ li .current-link {
 			margin: 0 0 0.5rem;
 		}
 	}
+
+.masonry-3gallery li:hover {
+    filter: grayscale(100%);
+    transition: 0.2s ease-in-out;
+}
 
 .gallery-container{
         /* 📌 Two-Column Layout - Now Scales Properly */
