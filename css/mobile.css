@@ -102,6 +102,14 @@
         transform: rotate(-45deg) translate(10px, -10px);
     }
 
+    .hero-wrapper {
+        margin-left: 0;
+    }
+
+    .hero-image {
+        background-position: left center;
+    }
+
     /* Content takes full width */
     .content {
         margin-left: 0;
@@ -112,6 +120,10 @@
     /* Adjust wrapper margin for mobile view */
     .wrapper {
         margin-left: 0;
+    }
+
+    .cover-img {
+        align-items: center;
     }
 
     /* Switch to 1-column masonry gallery in mobile view */
