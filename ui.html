@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/mobile.css" />
+
+    <title>My Portfolio</title>
+</head>
+<body>
+
+        <!-- Checkbox Trick for Mobile Toggle -->
+        <input type="checkbox" id="menu-toggle" style="display: none;">
+    
+        <!-- Hamburger Button -->
+        <label for="menu-toggle" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+    
+        <!-- Sidebar Navigation (Simple List) -->
+        <nav class="sidebar">
+            <ul>
+                <li class="category">Portfolio
+                    <ul>
+                        <li class="type"><a class="fancy-link" href="index.html">3D</a></li>
+                        <li class="type"><a class="fancy-link current-link" href="ui.html">UI</a></li>
+                        <li class="type"><a class="fancy-link" href="illustrations.html">Illustrations</a></li>
+                        <li class="type"><a class="fancy-link" href="projects.html">Projects</a></li>
+                    </ul>
+                </li>
+                <br>
+                <li class="category"><a class="fancy-link" href="about.html">About</a></li>
+                <li class="category"><a class="fancy-link" href="#">Resume</a></li>
+            </ul>
+                    <!-- Footer Section -->
+            <footer class="sidebar-footer">
+                <div class="social-icons">
+                    <a href="https://doumeki21.itch.io" target="_blank">
+                        <img src="assets/Icons/itch-io_1024x922.png" alt="Itch.io">
+                    </a>
+                    <a href="https://www.linkedin.com/in/olenka-yuen/" target="_blank">
+                        <img src="assets/Icons/linkedin_1024x1024.png" alt="LinkedIn">
+                    </a>
+                </div>
+                <p>©2025 Olenka Yuen</p>
+            </footer>
+        </nav>
+
+<!-- MAIN CONTENT -->
+        <div class="wrapper">
+            <div class="gallery-container">
+                <!-- NEW PROJECT -->
+            <div class="text-column mobile-sectionui">
+                <h1>SteamBound</h1>
+                <p>December 2024</p>
+                <p><b>Tools: </b>Figma, Unreal Engine 5</p>
+                <p>Submission for the Game Off 2024 game jam.</p>
+                <br>
+                <p>Project Link: <b><a class="ext-link" href="https://doumeki21.itch.io/steambound" target="_blank">https://doumeki21.itch.io/steambound</a></b></p>
+            </div>
+                <ul class="grid-gallery no-select">
+                    <li><img src="assets/UI/SteamBound_Controls.png" alt=""></li>
+                    <li><img src="assets/UI/SteamBound_Audio.png" alt=""></li>
+                    <li><img src="assets/UI/SteamBound_Book.png" alt=""></li>
+                    <li><img src="assets/UI/SteamBound_Craft.png" alt=""></li>
+                </ul>
+                
+                <!-- NEW PROJECT -->
+                <div class="text-column mobile-sectionui">
+                    <h1>Cosmic Crunch</h1>
+                    <p>August 2024</p>
+                    <p><b>Tools: </b>Figma, Unity3D</p>
+                    <p>Submission for the GMTK 2024 game jam.</p>
+                    <br>
+                    <p>Project Link: <b><a class="ext-link" href="https://miss-mystie.itch.io/cosmic-crunch" target="_blank">https://miss-mystie.itch.io/cosmic-crunch</a></b></p>
+                </div>
+                    <ul class="grid-gallery no-select">
+                        <li><img src="assets/UI/CosmicCrunch Title.png" alt=""></li>
+                        <li><img src="assets/UI/CosmicCrunch Gameplay.png" alt=""></li>
+                        <li><img src="assets/UI/CosmicCrunch Pause.png" alt=""></li>
+                        <li><img src="assets/UI/CosmicCrunch Victory.png" alt=""></li>
+                    </ul>
+                    <!-- <div class="text-column draft mobile-sectionui">
+                        <h1>Drafts</h1>
+                    </div> -->
+                    <div class="text-column drafts"><h2>Drafts</h2></div>
+                    
+                    <br>
+                    <ul class="grid-gallery no-select">
+                        <li><img src="assets/UI/GMTK2024_COMPLETEV1.png" alt=""></li>
+                        <li><img src="assets/UI/GMTK2024_COMPLETEV2.png" alt=""></li>
+                    </ul>
+
+                    <!-- NEW PROJECT -->
+                    <div class="text-column mobile-sectionui">
+                        <h1>Chroma Beats</h1>
+                        <p>April 2024</p>
+                        <p><b>Tools: </b>Figma, Unity3D</p>
+                        <p>Submission for a course project.</p>
+                        <br>
+                        <p>Project Link: <b><a class="ext-link" href="https://doumeki21.itch.io/chromabeats" target="_blank">https://doumeki21.itch.io/chromabeats</a></b></p>
+                    </div>
+                        <ul class="grid-gallery no-select">
+                            <li><img src="assets/UI/Chroma_Beat_Title.png" alt=""></li>
+                            <li><img src="assets/UI/Chroma_Beat_Instructions.png" alt=""></li>
+                            <li><img src="assets/UI/Chroma_Beat_play1.png" alt=""></li>
+                            <li><img src="assets/UI/Chroma_Beat_play2.png" alt=""></li>
+                        </ul>
+
+                        <!-- NEW PROJECT -->
+                    <div class="text-column mobile-sectionui">
+                        <h1>Gigantris</h1>
+                        <p>June 2024</p>
+                        <p><b>Tools: </b>Figma</p>
+                        <p>Submission for the Untitled Game Jam #94.</p>
+                    </div>
+                        <ul class="grid-gallery no-select">
+                            <li><img src="assets/UI/GigantrisMenu.png" alt=""></li>
+                            <li><img src="assets/UI/GigantrisControls.png" alt=""></li>
+                        </ul>
+            </div>
+        </div>
+</body>
+</html>

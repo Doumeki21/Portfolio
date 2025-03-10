@@ -277,7 +277,7 @@ li .current-link {
     margin: 0 auto;
     box-sizing: border-box;
     align-items: flex-start;
-    gap: 2rem; /* Adds space between columns */
+    gap: 2rem;
     overflow: hidden; /* Prevents any content overflow */
     }
 }
@@ -298,7 +298,14 @@ h1 {
     padding: 5rem 10rem;
     text-align: left;
     box-sizing: border-box;
+    .drafts {
+        padding: 0px;
+        margin-top: 0px;
+        bottom: 0px;
+    }
 }
+
+
 
 /* Right Column (Images) - Scales Better */
 .image-column {

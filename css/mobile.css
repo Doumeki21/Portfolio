@@ -152,4 +152,8 @@
     .grid-gallery {
         grid-template-columns: repeat(2, 1fr); /* Switches to 1 column on small screens */
     }
+
+    .mobile-sectionui {
+        padding-top: 5rem;
+    }
 }
