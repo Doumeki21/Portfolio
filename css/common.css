@@ -1,0 +1,200 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'bernier';
+    src: url('../assets/fonts/BERNIER-REGULAR.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: Nunito;
+    background: #f4f4f4;
+    transition: 0.3s ease-in-out;
+    background: #222222;
+    color: #f4f4f4;
+}
+
+/* Sidebar Navigation */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 220px;
+    height: 100vh;
+    background: #222;
+    padding-top: 20px;
+    box-sizing: border-box; /* Include padding in the height calculation */
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+
+    display: flex;
+    flex-direction: column; /* Make sidebar a flex container */
+    justify-content: space-between; /* Push footer to the bottom */
+}
+
+/* Sidebar List Styles */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    font-size: 18px;
+
+    &.category {
+        padding: 3px 20px;
+        color: white;
+        font-family: 'bernier', sans-serif;
+        /* transform: rotate(45deg); */
+    }
+
+    &.type {
+        padding: 3px 20px;
+        font-family: Nunito;
+        font-weight: bold;
+    }
+}
+
+.sidebar a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    /* padding: 12px 20px; */
+    /* transition: color 0.1s ease; */
+}
+
+.fancy-link {
+    text-decoration: none;
+    color: white;
+    /* position: relative; */
+  }
+
+  .fancy-link:hover {
+    color: #ffc0cb; /* Change text color to pink on hover */
+}
+
+li .current-link {
+    text-decoration: none;
+    color: #FF5291;
+  }
+
+/* Sidebar Footer */
+footer {
+    margin-top: auto;
+  }
+
+.sidebar-footer {
+    padding: 12px 20px;
+    text-align: left; /* Align text and icons to the left */
+    border-top: 1px solid #444; /* Optional: Add a border above the footer */
+}
+
+.sidebar-footer p {
+    color: white;
+    font-size: 12px;
+    /* padding-left: 10px; */
+}
+
+/* Social Media Icons */
+.social-icons {
+    /* display: flex; */
+    gap: 5px; /* Space between icons */
+}
+
+.social-icons a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+    font-size: 10px;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2); /* Slightly enlarge icons on hover */
+}
+
+.social-icons img {
+    width: 20px; /* Make icons smaller */
+    height: 20px; /* Make icons smaller */
+    filter: brightness(0) invert(1); /* Make icons white */
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: #222;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1100;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+@media (max-width: 900px) {
+     /* Hide Sidebar by Default */
+     .sidebar {
+        width: 100%;
+        height: 100vh;
+        transform: translateX(-100%);
+        background: rgba(0, 0, 0, 0.95);
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        text-align: left;
+        padding-top: 5rem;
+    }
+
+    /* .sidebar li {
+        font-size: 24px;
+        padding: 15px 80px;
+    } */
+
+    .sidebar li {
+        font-size: 24px;
+    
+        &.category {
+            padding: 3px 80px;
+            color: white;
+        }
+    
+        &.type {
+            padding: 3px 20px;
+        }
+    }
+
+    .sidebar-footer {
+        padding: 80px;
+    }
+
+    #menu-toggle:checked + .hamburger + .sidebar {
+        transform: translateX(0);
+    }
+
+    .hamburger {
+        display: flex;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        background: #222;
+        padding: 10px;
+        border-radius: 5px;
+        z-index: 1101;
+    }
+}

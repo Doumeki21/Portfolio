@@ -1,4 +1,3 @@
-
 /* Hamburger Menu */
 .hamburger {
     display: none;
@@ -103,11 +102,25 @@
     }
 
     .hero-wrapper {
+        flex-direction: column; /* Stacks text & image */
+        align-items: center;
+
         margin-left: 0;
+    }
+    .navbar-nav {
+        text-align: left;
+    }
+
+    .hero-img {
+        background-position: center; /* Center on small screens */
+        height: 50vh;
     }
 
     .hero-image {
         background-position: left center;
+        
+        text-align: center;
+        max-width: 90%;
     }
 
     /* Content takes full width */

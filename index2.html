@@ -3,50 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
-    <link rel="stylesheet" href="css/style2.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <!-- ✅ Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/indexChat.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/mobile.css" /> -->
+
+    <title>My Portfolio</title>
 </head>
 <body>
-    <!-- Fixed Navbar on the Left -->
-    <nav class="navbar">
-        <input type="checkbox" id="mobile-menu">
-        <label for="mobile-menu" class="navbar-toggle">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </label>
-        <div class="navbar-brand">My Portfolio</div>
-        <ul class="navbar-menu">
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#3d">3D</a></li>
-            <li><a href="#illustrations">Illustrations</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#resume">Resume</a></li>
-        </ul>
-    </nav>
 
-    <!-- Scrollable Gallery on the Right -->
-    <div class="gallery">
-        <div class="gallery-item">
-            <img src="image1.jpg" alt="Image 1">
+<!-- ✅ Sidebar + Hamburger Menu (No Change) -->
+<input type="checkbox" id="menu-toggle" style="display: none;">
+<label for="menu-toggle" class="hamburger">
+    <div></div>
+    <div></div>
+    <div></div>
+</label>
+
+<nav class="sidebar">
+    <ul>
+        <li class="category">Portfolio
+            <ul>
+                <li class="type"><a class="fancy-link current-link" href="index.html">3D</a></li>
+                <li class="type"><a class="fancy-link" href="ui.html">UI</a></li>
+                <li class="type"><a class="fancy-link" href="illustrations.html">Illustrations</a></li>
+                <li class="type"><a class="fancy-link" href="projects.html">Projects</a></li>
+            </ul>
+        </li>
+        <li class="category"><a class="fancy-link" href="about.html">About</a></li>
+        <li class="category"><a class="fancy-link" href="#">Resume</a></li>
+    </ul>
+    <footer class="sidebar-footer">
+        <div class="social-icons">
+            <a href="" target="_blank">
+                <img src="assets/Icons/itch-io_1024x922.png" alt="Itch.io">
+            </a>
+            <a href="" target="_blank">
+                <img src="assets/Icons/linkedin_1024x1024.png" alt="LinkedIn">
+            </a>
         </div>
-        <div class="gallery-item">
-            <video controls>
-                <source src="video1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-        <div class="gallery-item">
-            <img src="image2.jpg" alt="Image 2">
-        </div>
-        <div class="gallery-item">
-            <video controls>
-                <source src="video2.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-        <!-- Add more gallery items as needed -->
+        <p>©2025</p>
+    </footer>
+</nav>
+
+<!-- ✅ Hero Section -->
+<div class="hero-wrapper">
+    <div class="hero-img">
+        <div class="cover" alt="cg"></div>
     </div>
+    <div class="hero-text">
+        <h1 class="title">3D General Artist</h1>
+        <p class="subtitle">[AUTHOR]</p>
+    </div>
+</div>
+
+<!-- ✅ Gallery Section -->
+<div class="container mt-5">
+    <div class="row">
+        <!-- 👇 2-Column Grid for Videos/Images -->
+        <div class="col-12 col-md-6 mb-3">
+            <video src="assets/3D/LumenEdgeShowcase80.mp4" autoplay muted loop class="media-item"></video>
+        </div>
+        <div class="col-12 col-md-6 mb-3">
+            <video src="assets/3D/TandemShowcase80.mp4" autoplay muted loop class="media-item"></video>
+        </div>
+        <div class="col-12 col-md-6 mb-3">
+            <video src="assets/3D/Artblock.mp4" autoplay muted loop class="media-item"></video>
+        </div>
+        <div class="col-12 col-md-6 mb-3">
+            <video src="assets/3D/DioramaHD.mp4" autoplay muted loop class="media-item"></video>
+        </div>
+        <div class="col-12 col-md-6 mb-3">
+            <img src="assets/3D/AestheticCrisis1.png" class="media-item" alt="Aesthetic Crisis">
+        </div>
+        <div class="col-12 col-md-6 mb-3">
+            <img src="assets/3D/AestheticCrisis2.png" class="media-item" alt="Hands Chained">
+        </div>
+    </div>
+</div>
+
+<!-- ✅ Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>
