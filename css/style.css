@@ -12,6 +12,36 @@
     font-style: normal;
 }
 
+/* Wrapper takes full viewport */
+.hero-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    /* align-items: center; */
+    justify-content: flex-start; /* Align text to the left */
+    padding-left: 2%; /* Adjust for spacing */
+    text-align: left;
+    color: white; /* Ensure text is visible */
+
+    background-size: 100% auto; /* Ensures width fits the screen */
+    background-position: left top; /* Moves image toward the left */
+}
+
+.hero-img {
+    position: absolute;  /* Ensure it positions itself relative to the hero-wrapper */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /* The image used */
+    background-image: url('../assets/3D/BG_Cover3.2.png');
+    /* background-position: center;
+    background-repeat: no-repeat; */
+    background-size: cover;
+    background-color: black;
+    z-index: -1; /* Push it behind everything */
+}
 
 /* Text Styling */
 .hero-text {
