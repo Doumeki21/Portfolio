@@ -267,6 +267,12 @@ h1 {
     color: #FF5291;
 }
 
+/* set cover img to mobile */
+.cover-gallery {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
 /* Left Column (Text) - Adjusted Width */
 .text-column {
     width: 55%; /* Slightly larger than the image column */
@@ -279,8 +285,6 @@ h1 {
         bottom: 0px;
     }
 }
-
-
 
 /* Right Column (Images) - Scales Better */
 .image-column {
