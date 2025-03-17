@@ -1,0 +1,156 @@
+.wrapper {
+	margin: 0 auto;
+	max-width: 100%;
+	/* padding: 2rem; */
+	text-align: center;
+    margin-left: 240px; /* Match sidebar width */
+    transition: margin-left 0.3s ease-in-out;
+	
+	.gallery-container {
+		/* border: 2px solid #FF5291; */
+		border-radius: 0.5rem;
+		padding: 1rem;
+		margin: 1rem 0;
+		
+		/* h2 {
+			color: #333;
+		} */
+		
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			
+			li img {
+				display: block;
+				height: auto;
+				max-width: 100%;
+			}
+
+            li video {
+                    height: 100%; /* Make sure the video fills the container */
+                    width: 100%; /* Ensure it respects the parent's width */
+                    object-fit: cover; /* Ensure the video covers the area properly without distorting *
+                    height: 100%;*/
+            }
+		}
+	}
+}
+
+.cover {
+    display: block;
+    margin: auto;
+}
+
+/* THE MEAT AND POTATOES */
+.gallery-container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery-container{
+    /* 📌 Two-Column Layout - Now Scales Properly */
+.two-column-layout {
+display: flex;
+max-width: 100%;
+margin: 0 auto;
+box-sizing: border-box;
+align-items: flex-start;
+gap: 2rem;
+overflow: hidden; /* Prevents any content overflow */
+}
+}
+
+h1 {
+font-family: 'bernier';
+/* text-decoration: underline; */
+/* color: #FF5291; */
+}
+
+.ext-link {
+color: #FF5291;
+}
+
+/* Left Column (Text) - Adjusted Width */
+.text-column {
+width: 55%; /* Slightly larger than the image column */
+padding: 5rem 10rem;
+text-align: left;
+box-sizing: border-box;
+.drafts {
+    padding: 0px;
+    margin-top: 0px;
+    bottom: 0px;
+}
+}
+
+/* Right Column (Images) - Scales Better */
+.image-column {
+    width: 35%; /* Smaller to prevent overflow */
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 1rem;  */
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* Image Scaling */
+.image-column img {
+    width: 100%;
+    height: auto;
+    /* border-radius: 8px; */
+}
+/* Fixed Grid Gallery to be Properly 2 Columns */
+.grid-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Ensures two columns */
+    gap: 0.5rem; /* Space between items */
+    padding: 1rem;
+}
+
+.grid-gallery li {
+    margin: 0; /* Ensures no weird spacing */
+}
+
+.grid-gallery img {
+    width: 100%; /* Ensures images fit inside their grid */
+    height: auto;
+    display: block;
+}
+
+/* Mobile View */
+@media screen and (max-width: 900px) {
+    .cover {
+        max-width: 100%; /* Ensure the image resizes */
+        height: auto;
+    }
+    
+    .cover-img {
+        align-items: center;
+    }
+
+    .two-column-layout {
+        flex-direction: row;
+    }
+
+    .text-column {
+        text-align: left;
+        padding: 0.5rem;
+    }
+
+    .image-column {
+        width: 100%;
+        /* align-self: self-start; */
+
+        .img {
+            width: 100%; /* Make sure images scale properly */
+        height: auto;
+        }
+    }
+
+    .grid-gallery {
+        grid-template-columns: repeat(2, 1fr); /* Switches to 1 column on small screens */
+    }
+}

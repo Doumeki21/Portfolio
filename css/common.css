@@ -197,4 +197,10 @@ footer {
         border-radius: 5px;
         z-index: 1101;
     }
+
+    /* Adjust wrapper margin for mobile view */
+    .wrapper {
+        margin-left: 0;
+        padding: 1rem;
+    }
 }

@@ -208,6 +208,8 @@ li .current-link {
 .cover {
     display: block;
     margin: auto;
+    /* AI ADDED */
+    
 }
 
 /* THE MEAT AND POTATOES */
