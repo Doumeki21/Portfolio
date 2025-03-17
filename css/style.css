@@ -205,13 +205,6 @@ li .current-link {
 	}
 }
 
-.cover {
-    display: block;
-    margin: auto;
-    /* AI ADDED */
-    
-}
-
 /* THE MEAT AND POTATOES */
 .gallery-container ul {
     list-style: none;
@@ -219,7 +212,7 @@ li .current-link {
     padding: 0;
 }
 	
-	.masonry-gallery {
+	/* .masonry-gallery {
 		columns: auto 2;
 		column-gap: 0.5rem;
 
@@ -227,8 +220,9 @@ li .current-link {
 			break-inside: avoid;
 			margin: 0 0 0.5rem;
 		}
-	}
+	} */
 
+    /* ILLUSTRATION HTML */
     .masonry-3gallery {
 		columns: auto 3;
 		column-gap: 0.5rem;
@@ -242,6 +236,12 @@ li .current-link {
 .masonry-3gallery li:hover {
     filter: grayscale(100%);
     transition: 0.2s ease-in-out;
+}
+
+/* PROJECT HTML */
+.cover {
+    display: block;
+    margin: auto;
 }
 
 .gallery-container{
